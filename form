@@ -1,0 +1,25 @@
+	<label>Email:</label>
+	<input type="email" name="email"><br><br>
+	
+	<label>Phone:</label>
+	<input type="text" name="phone"><br><br>
+	
+	<label>Password:</label>
+	<input type="password" name="password"><br><br>
+	
+	<input type="submit" name="submit" value="Submit">
+</form>
+<?php
+if(isset($_POST["submit"])){
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$phone = $_POST['phone'];
+	$password = $_POST['password'];
+	
+	echo "<h2>Your Details:</h2>";
+	echo "Name: ".$name."<br>";
+	echo "Email: ".$email."<br>";
+	echo "Phone Number: ".$phone."<br>";
+	echo "Password: ".$password."<br>";
+}
+?>
